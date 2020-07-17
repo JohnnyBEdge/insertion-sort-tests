@@ -4,8 +4,6 @@
 //
 
 const insertionSort = (arr) => {
-    
-//checks for valid input
     if(arr.length === 0){
         throw new Error('Array cannot be empty');
     } else if(!Array.isArray(arr)){
@@ -15,8 +13,8 @@ const insertionSort = (arr) => {
     }
 
         for(i = 1; i < arr.length; i++){
-            let curr = arr[i]; //1
-            let prev = i-1; //0
+            let curr = arr[i]; 
+            let prev = i-1;
             while(prev >= 0 && arr[prev] > curr){
                 arr[prev + 1] = arr[prev];
                 prev--;

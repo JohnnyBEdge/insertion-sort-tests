@@ -32,7 +32,7 @@ describe("insertion sort algorithm", () => {
         expect(actual).toEqual(expected);
     });
 
-    test('returns the same, alreeady sorted array', () => {
+    test('returns the same, already sorted array', () => {
         const expected = [11, 12, 13];
         const actual = insertionSort([11, 12, 13]);
         expect(actual).toEqual(expected);

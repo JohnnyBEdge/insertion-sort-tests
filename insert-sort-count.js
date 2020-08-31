@@ -2,7 +2,7 @@ const insertionSort = (arr) => {
     let outter = 0;
     let inner = 0;
         for(i = 1; i < arr.length; i++){
-            console.log(arr)
+            // console.log(arr)
             outter++
             let curr = arr[i]; 
             let prev = i-1; 
@@ -11,7 +11,7 @@ const insertionSort = (arr) => {
                 arr[prev + 1] = arr[prev];
                 prev--;
             }
-            console.log(prev)
+            // console.log(prev)
         arr[prev +1] = curr
         }
         console.log("outter: ", outter);
